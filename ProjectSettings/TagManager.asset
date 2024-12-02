@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - GameMain
+  - DeathCollision
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Interactable
   - Creature
   - GameMain
-  - 
+  - DeathCollision
   - 
   - 
   - 

@@ -383,5 +383,21 @@ namespace StarterAssets
                 AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
             }
         }
+
+
+        //Added this bit of code as OnCollisionEnter events dont trigger with character controllers
+        void OnControllerColliderHit(ControllerColliderHit hit)
+        {
+
+            if (hit.collider.CompareTag("DeathCollision"))
+            {
+                if (TryGetComponent<PlayMakerFSM>(out var fsm))
+                {
+                    fsm.SendEvent("ResetOnDeath");
+                }
+            }
+
+        }
+
     }
 }

@@ -37,3 +37,7 @@ MonoBehaviour:
   - Key1Found
   - ResetOnDeath
   - Captured
+  - ReleaseKey
+  - TrapdoorCapture0
+  - TrapdoorCapture1
+  - TrapdoorCapture2
